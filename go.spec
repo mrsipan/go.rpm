@@ -2,8 +2,9 @@
 # Specfile for go. See README for instructions
 
 Name:          go
-Version:       1.0.3
-Release:       1%{?dist}
+Version:       1.1.2
+#Release:       1%{?dist}
+Release:       1
 Summary:       Go compiler and tools
 Group:         Development/Languages
 License:       BSD
