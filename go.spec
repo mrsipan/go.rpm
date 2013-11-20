@@ -2,7 +2,7 @@
 # Specfile for go. See README for instructions
 
 Name:          go
-Version:       1.1.2
+Version:       1.2rc5
 #Release:       1%{?dist}
 Release:       1
 Summary:       Go compiler and tools
