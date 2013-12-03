@@ -1,8 +1,5 @@
 #!/bin/sh -vex
 
-test -z $@ && exit 1
-
-
 usage(){
   cat << EOF
   usage $0 options
@@ -15,6 +12,8 @@ usage(){
     -v Version of the go lang to use
 EOF
 }
+
+test -z $@ && { usage; exit 1; }
 
 GO_VERSION=
 
@@ -30,6 +29,9 @@ while getopts "v:" OPTION; do
     ?)
       usage
       exit 1
+      ;;
+    *)
+      usage
       ;;
   esac
 done

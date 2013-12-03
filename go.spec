@@ -2,7 +2,7 @@
 # Specfile for go. See README for instructions
 
 Name:          go
-Version:       1.2rc5
+Version:       1.2
 #Release:       1%{?dist}
 Release:       1
 Summary:       Go compiler and tools
@@ -137,6 +137,8 @@ rm -rf %{buildroot}
 %{_datadir}/emacs/site-lisp/go-mode*.el
 
 %changelog
+* Wed Dec 03 2013 Ben Sanchez - 1.0.4
+- Update to 1.2
 * Mon Oct 01 2012 Kamil Kisiel <kamil@kamilkisiel.net> - 1.0.3
 - Update to 1.0.3
 * Sun Sep 02 2012 Dennis Kaarsemaker <dennis.kaarsemaker@booking.com> - 1.0.2
